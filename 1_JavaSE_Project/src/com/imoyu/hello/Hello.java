@@ -19,6 +19,8 @@ public class Hello {
 
         System.out.println(new File(getRuntimePath() + "/resource.txt").exists());
         System.out.println(new File(Hello.class.getProtectionDomain().getCodeSource().getLocation().getPath() + "!/resource.txt").exists());
+
+        System.out.println("[Hello.class.getResource(\"/\").getPath()]: " + Hello.class.getResource("/").getPath());
     }
 
     private static String getRuntimePath() {
