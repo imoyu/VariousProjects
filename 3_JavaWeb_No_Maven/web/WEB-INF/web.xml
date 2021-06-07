@@ -6,7 +6,7 @@
     
     <servlet>
         <servlet-name>Hello</servlet-name>
-        <servlet-class>com.imoyu.HelloServlet</servlet-class>
+        <servlet-class>com.imoyu.com.imoyu.HelloServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Hello</servlet-name>
