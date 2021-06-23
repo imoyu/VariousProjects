@@ -7,6 +7,16 @@ public class TableForSSM {
     private String phone;
     private Boolean isMale;
 
+    @Override
+    public String toString() {
+        return "TableForSSM{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", isMale=" + isMale +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
@@ -38,7 +48,7 @@ public class TableForSSM {
         return isMale;
     }
 
-    public TableForSSM setMale(Boolean male) {
+    public TableForSSM setIsMale(Boolean male) {
         isMale = male;
         return this;
     }
