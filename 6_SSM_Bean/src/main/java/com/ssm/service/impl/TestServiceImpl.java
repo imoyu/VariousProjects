@@ -25,7 +25,7 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public String get() {
-        String phone = mapper.get();
+        String phone = mapper.get("a");
         return phone;
     }
 }

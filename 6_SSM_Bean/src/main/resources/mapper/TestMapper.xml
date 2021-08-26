@@ -11,7 +11,12 @@
     </insert>
 
     <select id="get" resultType="java.lang.String">
-        select phone from table_for_ssm limit 1
+        <if test="s != 'a'.toString()">
+            select 'phone1' from table_for_ssm limit 1
+        </if>
+        <if test="s == 'a'.toString()">
+            select phone from table_for_ssm limit 1
+        </if>
     </select>
 
 </mapper>
